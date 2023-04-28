@@ -119,4 +119,4 @@ class text_analyzer:
         text2_sentences = " ".join(text2_tokens)
 
         text1_embedding = self.model.encode(text1_sentences, convert_to_tensor=True)
-        text2_embedding = self.model.encode(text2_sentences, convert_to_tensor
+        text2_embedding = self.model.encode(text2_sentences, convert_to_tensor=True)
