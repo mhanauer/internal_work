@@ -120,8 +120,9 @@ class text_analyzer:
 
         text1_embedding = self.model.encode(text1_sentences, convert_to_tensor=True)
         text2_embedding = self.model.encode(text2_sentences, convert_to_tensor=True)
-        similarity_score = cosine_similarity(text1_embedding, text2_embedding).round(2)
+        similarity_score = self.cosine_similarity(text1_embedding, text2_embedding).round(2)
         return similarity_score
+
 
     def calculate_word_frequency(self, text_tokens):
         """
