@@ -1,7 +1,5 @@
 import xgboost as xgb
 import lightgbm as lgb
-from sklearn.ensemble import RandomForestRegressor
-from sklearn.experimental import enable_hist_gradient_boosting
 from sklearn.ensemble import HistGradientBoostingRegressor
 from sklearn.model_selection import RepeatedKFold
 from mlxtend.regressor import StackingCVRegressor
