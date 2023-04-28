@@ -120,3 +120,23 @@ class text_analyzer:
 
         text1_embedding = self.model.encode(text1_sentences, convert_to_tensor=True)
         text2_embedding = self.model.encode(text2_sentences, convert_to_tensor=True)
+
+    def calculate_word_frequency(self, text_tokens):
+        """
+        Calculates the frequency distribution of words in a set of text tokens.
+        
+        Parameters
+        ----------
+        text_tokens : list
+            A list of preprocessed text tokens.
+
+        Returns
+        -------
+        nltk.probability.FreqDist
+            A frequency distribution object containing the word frequencies.
+        """
+        filtered_tokens = [
+            token for token in text_tokens if token not in self.stop_words
+        ]
+        fdist = FreqDist(filtered_tokens)
+        return fdist

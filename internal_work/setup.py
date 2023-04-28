@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='internal_work',
-    version='1.04',
+    version='1.05',
     description='Internal package for me work',
     author='Matt Hanauer',
     author_email='matthewhanauer99@gmail.com',
