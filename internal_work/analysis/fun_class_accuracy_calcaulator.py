@@ -10,6 +10,9 @@ def fun_class_accuracy_calcaulator(y_test, y_predicted):
         y_test (binary): y_test from a train test split
         y_predicted (int): predicted probability from a model
 
+    Balanced accuracy: (Sensitivity + Specificity) / 2
+    F1: It's often used when the classes are imbalanced and there is a serious downside to predicting false negatives
+
     Returns:
         DataFrame: See summary
     """
