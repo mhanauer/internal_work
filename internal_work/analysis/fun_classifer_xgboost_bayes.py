@@ -22,7 +22,7 @@ def fun_classifer_xgboost_bayes(
         y_train (int): binary y_train from testing train split.
         n_splits (int): The number of splits for the repeated cross validation.
         n_repeats (int): The number of repeats for the repeated cross validation.
-        id_var (str, optional): Id var you need to remove.  Likely mrn. Defaults to "None".
+        id_var (str, optional): Id var you need to remove.  Likely patient_id. Defaults to "None".
 
 learning_rate: (0.01, 0.3)
     Explanation: This parameter controls how quickly or slowly a model learns during training. A smaller value like 0.01 makes the model        learn slowly, which could achieve better performance but may also lead to overfitting if not properly regulated. A larger value like        0.3 makes the model learn quickly, potentially making the learning process less accurate.
